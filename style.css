@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Playfair Display", serif;
+    background: #b7dfff;
+    color: darkslategrey;
+    line-height: 1.5;
+    font-size: 14px;
+}
