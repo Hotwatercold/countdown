@@ -9,3 +9,69 @@ body{
     line-height: 1.5;
     font-size: 14px;
 }
+h3,h4{
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 16px;
+}
+p{
+    margin-bottom: 20px;
+    color: cadetblue;
+}
+.section-center {
+    width: 90%;
+    margin: auto;
+}
+.give-img {
+    margin-bottom: 32px;
+}
+.give-info h3 {
+    text-transform: uppercase;
+    color: #3d4f6f;
+    text-align: center;
+}
+.give-info p {
+    color: rgba(6, 22, 27, 0.847);
+    text-align: center;
+    margin: 32px 0;
+    font-size: 15px;
+}
+.giveaway {
+    text-align: center;
+}
+.deadline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.deadline-format {
+    background: black;
+    color: aquamarine;
+    margin-right: 16px;
+    width: 80px;
+    height: 80px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+.deadline-format span {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.deadline h4{
+    font-size: 32px;
+    margin-bottom: 4px;
+    letter-spacing: 4px;
+}
+img {
+    width: 100%;
+}
