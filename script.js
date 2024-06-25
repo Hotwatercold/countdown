@@ -8,7 +8,7 @@ let tempdate=new Date();
 let tempyear=tempdate.getFullYear();
 let tempmonth=tempdate.getMonth();
 let tempday=tempdate.getDate();
-let temptime=tempdate.getTime();
+
 
 // this is the deadline Date
 const deadlinedate=new Date(2024,8,9,12,12,12);
@@ -20,5 +20,26 @@ const time=deadlinedate.getTime();
 
 giveaway.textContent=`giveaway ends on ${dayname[weekday]}, ${day} ${monthname[month]} ${year}`
 
-let difference=time-temptime;
-console.log(difference);
+function getremainingtime(){
+    let temptime=tempdate.getTime();
+    let difference=time-temptime;
+    let oneday=24*60*60*1000;
+    let onehour=60*60*1000;
+    let oneminute=60*1000
+    let remainingday=Math.floor(difference/oneday);
+    let remaininghour=Math.floor((difference % oneday)/onehour);
+    let remainingminute=Math.floor((difference % onehour)/oneminute);
+    let remainingsecond=Math.floor((difference % oneminute)/1000);
+    console.log(remainingday+","+remaininghour+","+remainingminute+","+remainingsecond);
+    let values=[remainingday,remaininghour,remainingminute,remainingsecond];
+    // function format(item){
+    //     if(item<10)
+    // }
+    boxes.forEach(function(box,index){
+        box.innerHTML=values[index];
+    });
+
+    
+}
+let countdown=setInterval(getremainingtime,1000);
+getremainingtime();
